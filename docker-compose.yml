@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  nginx-rtmp:
+    build: .
+    container_name: nginx-rtmp
+    ports:
+      - "80:80"
+      - "1935:1935"
+    volumes:
+      - ./srv:/srv
